@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="./src/ico.svg"
+      type="image/x-icon"
+    />
+    <title>Video Designer | Fernanda Guerra</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script
+      src="https://kit.fontawesome.com/4b3354c3ac.js"
+      defer
+      crossorigin="anonymous"
+    ></script>
+    <script src="./main.js" defer></script>
+  </head>
+
+  <body>
+    <header class="header" id="header">
+      <div class="profile-container">
+        <img
+          class="profile-img"
+          src="./images/profile.jpg"
+          alt="Imagem de perfil"
+        />
+        <h1 class="profile-name">Fernanda Guerra</h1>
+        <ul class="social-list">
+          <li class="social">
+            <i class="fa-brands fa-twitter" title="Twitter Icon"></i>
+          </li>
+          <li class="social">
+            <i class="fa-brands fa-facebook-f" title="Facebook Icon"></i>
+          </li>
+          <li class="social">
+            <i class="fa-brands fa-instagram" title="Instagram Icon"></i>
+          </li>
+          <li class="social">
+            <i class="fa-brands fa-linkedin" title="Linkedin Logo"></i>
+          </li>
+        </ul>
+      </div>
+      <nav class="menu-list">
+        <ul>
+          <li>
+            <a
+              href="#home"
+              class="menu"
+              data-menu="home"
+              title="Ir para a primeira página"
+            >
+              <i class="fa-solid fa-house" title="House icon"></i>
+              <span>Home</span>
+            </a>
+          </li>
+
+          <li>
+            <a
+              href="#biografia"
+              class="menu"
+              data-menu="biografia"
+              title="Ir para a página de biografia"
+            >
+              <i class="fa-solid fa-user" title="User icon"></i>
+              <span>Biografia</span>
+            </a>
+          </li>
+
+          <li>
+            <a
+              href="#videoDesign"
+              class="menu"
+              data-menu="videoDesign"
+              title="Ir para página de video design"
+            >
+              <i class="fa-solid fa-video" title="Video icon"></i>
+              <span>Video Design</span>
+            </a>
+          </li>
+          <li>
+            <a
+              href="#design"
+              class="menu"
+              data-menu="design"
+              title="Ir para página de Design"
+            >
+              <i class="fa-solid fa-pen" title="Pen Icon"></i>
+              <span> Design </span>
+            </a>
+          </li>
+
+          <li>
+            <a
+              href="#orcamento"
+              class="menu"
+              data-menu="orcamento"
+              title="Ir para página de orçamento"
+            >
+              <i class="fa-solid fa-sack-dollar" title="Money Icon"></i>
+              <span>Orçamento</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="dark-mode-container">
+        <input type="checkbox" id="dark-mode-toggle" />
+        <label for="dark-mode-toggle" id="labelToggle">
+          <i class="fa-regular fa-sun" id="light"></i>
+          <p class="toggle" id="toggle-mode"></p>
+          <i class="fa-regular fa-moon" id="dark"></i>
+        </label>
+      </div>
+      <footer class="footer">
+        <p class="copy">© Copyright Fernanda Guerra</p>
+        <p class="by">
+          Feito por
+          <a href="https://github.com/lucasds2" title="Link do github"
+            >Lucas <i class="fa-brands fa-github"></i
+          ></a>
+        </p>
+      </footer>
+    </header>
+
+    <section class="section">
+      <div class="home" id="home" data-active>
+        <div class="name-and-description">
+          <h1 class="name">Fernanda Guerra</h1>
+          <p>
+            <span class="description" id="description">Designer e Editora</span>
+            <span class="type"></span>
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <main class="main-page" id="main">
+      <button class="menuBtn active" id="btnHamburguer">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+      <button class="menuBtn" id="btnClose">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+      <a href="#home" title="Ir para o topo da página">
+        <button class="up-button" id="btnUp">
+          <i class="fa-solid fa-arrow-up"></i>
+        </button>
+      </a>
+
+      <section
+        class="biografia container"
+        id="biografia"
+        data-active
+        data-animate
+      >
+        <h2 class="title">Biografia</h2>
+        <div class="about-me">
+          <p class="biograph">
+            Amante da arte desde criança, logo notei meu gosto e habilidade com
+            fotografia. Trabalhei na área por 2 anos. Em 2014, entrei para o
+            curso de Artes Plásticas na Universidade Federal do Espirito Santo
+            em Vitória - ES aonde residia na época. Lá descobri a edição de
+            vídeo e consequentemente a paixão que eu não sabia que existia. Em
+            2015 comecei a cursar Cinema na mesma Universidade e foi onde
+            comecei a de fato editar vídeos. Desde então faço trabalhos
+            autônomos relacionados à edição.
+          </p>
+          <ul class="about-list">
+            <li>
+              <i class="fa-solid fa-chevron-right"></i>
+              <span class="bold">Cidade atual:</span><span>Vitória, ES</span>
+            </li>
+            <li>
+              <i class="fa-solid fa-chevron-right"></i>
+              <span class="bold">Contato:</span
+              ><span
+                ><a href="mailto:fefaguerra7@gmail.com" title="Acessar email"
+                  >fefaguerra7@gmail.com</a
+                ></span
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="habilities" id="habilities">
+          <h2 class="title">Habilidades</h2>
+          <div class="skill-container">
+            <div class="skill">
+              <p class="skill-name">Sony Vegas</p>
+              <p class="percentage-number" id="percentage">90%</p>
+              <div class="progress-bar">
+                <div class="filled" id="#filled"></div>
+              </div>
+            </div>
+            <div class="skill">
+              <p class="skill-name">Photoshop</p>
+              <p class="percentage-number" id="percentage">80%</p>
+              <div class="progress-bar">
+                <div class="filled" id="#filled"></div>
+              </div>
+            </div>
+            <div class="skill">
+              <p class="skill-name">Inglês</p>
+              <p class="percentage-number" id="percentage">75%</p>
+              <div class="progress-bar">
+                <div class="filled" id="#filled"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div
+        class="videoDesign container"
+        id="videoDesign"
+        data-active
+        data-animate
+      >
+        <h2 class="title">Video Design</h2>
+
+        <div class="container-client">
+          <p class="about-client">
+            Juliana Borges, personal trainer e instrutora de Yoga, tem uma
+            necessidade de mostrar seu trabalho através do IGTV do Instagram.
+            Arte e edição dos vídeos criados por mim, logo já existente cedida e
+            adaptada à necessidade da cliente.
+          </p>
+          <div class="container-video">
+            <div class="video-client">
+              <iframe src="https://www.veed.io/embed/3b7f225e-eb4d-4642-a812-151226e472dc" frameborder="0" title="Juliana - Video1.m4v" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+            </div>
+            <div class="video-client">
+              <iframe src="https://www.veed.io/embed/8bd94f5e-847a-46ae-8615-c6aa7aa508f0" frameborder="0" title="Juliana - Video2.m4v" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+            </div>
+            <div class="video-client">
+              <iframe src="https://www.veed.io/embed/c81a82fe-e56b-4f9c-88bd-785230248e2c" frameborder="0" title="Juliana - Video3.m4v" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+            </div>
+            <div class="video-client">
+              <iframe src="https://www.veed.io/embed/e077aed3-2d24-485f-b938-45c44240fd2a" frameborder="0" title="Juliana - Video4.mp4" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+            </div>
+            <div class="video-client">
+              <iframe src="https://www.veed.io/embed/b7f18d67-8da2-4dfc-87c9-8402f3db25c7" frameborder="0" title="Juliana - Video5.mp4" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+            </div>
+            <div class="video-client">
+              <iframe src="https://www.veed.io/embed/e635f477-add7-48c4-afd1-301bf9c217ba" frameborder="0" title="Juliana - Video6.mp4" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+            </div>
+          </div>
+
+          <div class="container-social">
+            <p class="paragraph-client">Juliana Borges</p>
+            <ul class="social-client">
+              <a
+                target="_blank"
+                href="https://instagram.com/prof.julianaborges?utm_medium=copy_link"
+                title="Link instagram Juliana Borges"
+              >
+                <li>
+                  <i class="fa-brands fa-instagram"></i>
+                </li>
+              </a>
+            </ul>
+          </div>
+        </div>
+
+        <div class="container-client">
+          <p class="about-client">
+            Muito fã de Bealtes, Marcia Grisoli dispõe de um canal de cover
+            voltado à banda. Como amante da música, não faz apenas clipes, mas
+            também vídeos relacionados ao tema, como vemos abaixo:
+          </p>
+          <div class="video-client">
+            <div class="container-video marcia-video">
+              <iframe src="https://www.youtube.com/embed/BZvZ8kdgdwA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+          </div>
+          <p class="other-jobs">
+            Outros trabalhos prestados para Marcia, consistem na criação de
+            vinhetas para vídeos do Instagram, teasers e abertura de vídeos do
+            YouTube
+          </p>
+          <div class="container-video marcia">
+            <div class="video-client">
+              <iframe src="https://www.veed.io/embed/77d0c580-bff6-4d38-ba7b-87b4b03f0458" frameborder="0" title="Vinheta - Marcia.mp4" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+            </div>
+            <div class="video-client">
+              <iframe src="https://www.youtube.com/embed/8fSJ1t51fp0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+            <div class="video-client">
+              <iframe src="https://www.veed.io/embed/910b71e6-2730-450d-8668-3b547d3752b5" frameborder="0" title="Abertura de Video.mp4" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+            </div>
+          </div>
+
+          <div class="container-social">
+            <p class="paragraph-client">Marcia Grisoli</p>
+            <ul class="social-client marcia-social">
+              <a
+                target="_blank"
+                href="https://www.facebook.com/grisolimarcia"
+                title="Link facebook Marcia"
+              >
+                <li>
+                  <i class="fa-brands fa-facebook-f"></i>
+                </li>
+              </a>
+              <a
+                target="_blank"
+                href="https://instagram.com/marciagrisoli"
+                title="Link instagram Marcia"
+              >
+                <li>
+                  <i class="fa-brands fa-instagram"></i>
+                </li>
+              </a>
+              <a
+                target="_blank"
+                href="https://www.youtube.com/marciagrisoli "
+                title="Link youtube Marcia"
+              >
+                <li>
+                  <i class="fa-brands fa-youtube"></i>
+                </li>
+              </a>
+            </ul>
+          </div>
+        </div>
+
+        <div class="container-client">
+          <p class="about-client">
+            Diário de uma Tiete é um quadro do canal de Christina Fuscaldo,
+            sempre em busca de chegar perto do ídolo, assistimos às histórias
+            contadas com uma edição bem humorada fazendo jus ao conteúdo.
+          </p>
+          <div class="container-video diario">
+            <div class="video-client">
+              <iframe src="https://www.youtube.com/embed/2HN9TnTDzBA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+            <div class="video-client">
+              <iframe src="https://www.youtube.com/embed/jVY-K1NbwHI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+          </div>
+          <p class="other-jobs">
+            Para este trabalho também foi realizada abertura e tela final dos
+            vídeos:
+          </p>
+          <div class="container-video diario">
+            <div class="video-client">
+              <iframe src="https://player.vimeo.com/video/793476489?h=fb6dd6e2a4&color=845ef7&byline=0&portrait=0" frameborder="0" allow="fullscreen; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <div class="video-client">
+              <iframe src="https://player.vimeo.com/video/793476826?h=47abf0bf5b&color=845ef7&byline=0&portrait=0" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+            </div>
+          </div>
+          <div class="container-social">
+            <p class="paragraph-client">Diário de uma Tiete</p>
+            <ul class="social-client">
+              <a
+                target="_blank"
+                href="https://www.youtube.com/watch?v=R0e0-nO5R4U&list=PLFTqd4suWYrT7TVjem1HNsfCZRONsFFFD"
+                title="Playlist Diario de uma Tiete"
+              >
+                <li>
+                  <i class="fa-brands fa-youtube"></i>
+                </li>
+              </a>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <section class="design container" id="design" data-active data-animate>
+        <h2 class="title">Design</h2>
+        <div class="container-art">
+          <div class="art">
+            <p class="title-art">
+              Assistência de Arte em
+              <span class="book-name">Jimmy Page no Brasil/In Brazil:</span>
+            </p>
+            <img src="./images/capa jimmy.jpg" alt="Capa Jimmy" />
+          </div>
+          <div class="art">
+            <p class="title-art">
+              Assistência de Arte em
+              <span class="book-name">O Piauí</span>
+              no Futebol:
+            </p>
+            <img src="./images/Capa Piaui.jpg" alt="Capa Jimmy" />
+          </div>
+          <div class="art">
+            <p class="title-art">
+              Assistência de Arte em
+              <span class="book-name"
+                >Contos de Resistência em tempos de pandemia:</span
+              >
+            </p>
+            <img src="./images/Capa Contos.jpg" alt="Capa Jimmy" />
+          </div>
+        </div>
+      </section>
+
+      <section
+        class="orcamento container"
+        id="orcamento"
+        data-active
+        data-animate
+      >
+        <h2 class="title">Orçamento</h2>
+        <form
+          class="form"
+          id="form"
+          action="https://formspree.io/f/myyakgvr"
+          method="post"
+        >
+          <h2>Preencha seus dados e descreva o serviço</h2>
+          <div class="input">
+            <input required type="text" name="name" id="name" />
+            <label for="name">Nome</label>
+          </div>
+          <div class="input">
+            <input required type="text" name="lastName" id="lastName" />
+            <label for="lastName">Sobrenome</label>
+          </div>
+          <div class="input">
+            <input required type="email" name="email" id="email" />
+            <label for="email">Email</label>
+          </div>
+          <div class="select">
+            <select class="services" required name="serviceType">
+              <option disabled selected value>Selecione um dos serviços</option>
+              <option value="Video para o YouTube">Video para o YouTube</option>
+              <option value="Vinheta/Intro">Vinheta/Intro</option>
+              <option value="Video para o IGTV/Reels">
+                Video para o IGTV/Reels
+              </option>
+              <option value="Video para o Stories">Video para o Stories</option>
+            </select>
+            <i class="fa-solid fa-chevron-down"></i>
+          </div>
+          <textarea
+            name="jobType"
+            id="job"
+            required
+            placeholder="Especifique o tipo do trabalho, minutagem e propósito do serviço"
+          ></textarea>
+          <button class="btnForm" id="btn" title="To request a quote">
+            Solicitar Orçamento
+          </button>
+        </form>
+      </section>
+    </main>
+  </body>
+</html>
