@@ -72,6 +72,10 @@ html{
   padding: 5px;
 }
 
+.social-list a {
+  color: white;
+}
+
 .social {
   font-size: 0.9em;
   background-color: var(--social-background);
